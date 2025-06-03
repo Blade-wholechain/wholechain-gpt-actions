@@ -11,9 +11,9 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://<YOUR_GITHUB_USERNAME>.github.io/wholechain-gpt-actions/openapi.yaml"
+    "url": "https://Blade-wholechain.github.io/wholechain-gpt-actions/openapi.yaml"
   },
   "logo_url": "https://wholechain.com/logo.png",
-  "contact_email": "your.email@domain.com",
+  "contact_email": "blade@wholechain.com",
   "legal_info_url": "https://wholechain.com/terms"
 }

@@ -1,0 +1,19 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "wholechain_epcis",
+  "name_for_human": "Wholechain EPCIS Lookup",
+  "description_for_model": "Fetches EPCIS event details by Purchase Order or Lot Number.",
+  "description_for_human": "Look up the history of a Purchase Order or Lot Number on Wholechain.",
+  "auth": {
+    "type": "api_key",
+    "authorization_type": "header",
+    "verification_tokens": {}
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://<YOUR_GITHUB_USERNAME>.github.io/wholechain-gpt-actions/openapi.yaml"
+  },
+  "logo_url": "https://wholechain.com/logo.png",
+  "contact_email": "your.email@domain.com",
+  "legal_info_url": "https://wholechain.com/terms"
+}

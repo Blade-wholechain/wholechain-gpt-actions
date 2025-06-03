@@ -1,0 +1,37 @@
+openapi: 3.0.1
+info:
+  title: Wholechain EPCIS API
+  version: 1.0.0
+paths:
+  /epcis/Events/details:
+    get:
+      summary: Get EPCIS event details
+      description: Get EPCIS event details by PO or Lot number.
+      parameters:
+        - name: PurchaseOrder
+          in: query
+          description: Purchase order number
+          required: false
+          schema:
+            type: string
+        - name: LotSerial
+          in: query
+          description: Lot serial number
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+      security:
+        - ApiKeyAuth: []
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-KEY
